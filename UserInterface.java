@@ -35,6 +35,8 @@ public class UserInterface implements AutoCloseable
 
             if (operation.equals ("+"))
               expression = new Add (op1, op2);
+            else if (operation.equals ("-"))
+              expression = new Subtract (op1, op2);
           }
         }
       }
