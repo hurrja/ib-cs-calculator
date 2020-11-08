@@ -39,6 +39,8 @@ public class UserInterface implements AutoCloseable
               expression = new Subtract (op1, op2);
             else if (operation.equals ("*"))
               expression = new Multiply (op1, op2);
+            else if (operation.equals ("/"))
+              expression = new Divide (op1, op2);
           }
         }
       }
